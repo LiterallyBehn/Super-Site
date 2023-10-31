@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Super Site!</title>
+    <!-- Estilos -->
+    <link href="assets/css/First-Style-Specificity.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/Loader.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/others/presentations/Presentations.css"
+    />
+    <link
+      href="assets/media/img/svg/Tiger.svg"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="loader">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <!-- Barra de navegación -->
+    <nav>
+      <!-- Isotipo -->
+      <a href="index.html"
+        ><img alt="Isotipo" src="assets/media/img/svg/Tiger.svg"
+      /></a>
+      <!-- Enlaces -->
+      <ul>
+        <li>
+          <a href="index.html" id="inicio">Inicio</a>
+        </li>
+        <li>
+          <a href="#Who">¿Quiénes somos?</a>
+        </li>
+        <li>
+          <a href="#" id="contacto">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+    <img
+      alt="Descripción de la imagen"
+      id="header-image"
+      src="assets/media/img/jpg/header/Header.jpg"
+    />
+    <main class="container">
+      <object
+        id="presentation1"
+        data="assets/media/pdf/Color-Study-Presentation.pdf"
+        type="application/pdf"
+        aria-label="Color Study Presentation"
+      ></object>
+      <object
+        id="presentation2"
+        data="assets/media/pdf/Color-Study.pdf"
+        type="application/pdf"
+        aria-label="Color Study Documentation"
+      ></object>
+      <object
+        id="presentation3"
+        data="assets/media/pdf/Animation-Presentation.pdf"
+        type="application/pdf"
+        aria-label="Animations Presentation"
+      ></object>
+      <object
+        id="presentation4"
+        data="assets/media/pdf/Animations-Documentation.pdf"
+        type="application/pdf"
+        aria-label="Animations Documentation"
+      ></object>
+      <object
+        id="presentation5"
+        data="assets/media/pdf/Object-Oriented-Programming-Presentation.pdf"
+        type="application/pdf"
+        aria-label="Object-oriented Programming Presentation"
+      ></object>
+      <object
+        id="presentation6"
+        data="assets/media/pdf/Object-Oriented-Programming.pdf"
+        type="application/pdf"
+        aria-label="Object-oriented Programming Documentation"
+      ></object>
+      <object
+        id="presentation7"
+        data="assets/media/pdf/Introduction-to-Aggregate-Value-Taxes.pdf"
+        type="application/pdf"
+        aria-label="Introduction to Aggregate Value Taxes"
+      ></object>
+      <img
+        src="assets/media/img/svg/forms/left-arrow.svg"
+        id="leftArrow"
+        onclick="previousPresentation()"
+        style="display: none"
+      />
+      <img
+        src="assets/media/img/svg/forms/right-arrow.svg"
+        id="rightArrow"
+        onclick="nextPresentation()"
+      />
+    </main>
+    <footer id="Who" class="footer-grid">
+      <section>
+        <p id="title">¿Quiénes somos?</p>
+        <p class="fidex-width">
+          Somos una comunidad unida por la pasión por la informática y los
+          animales. Nuestro equipo de expertos te ofrece contenido útil y
+          entretenido, siempre buscando mejorar. Aquí, puedes aprender sobre
+          fauna mientras desarrollas habilidades de programación. ¡Te esperamos!
+        </p>
+      </section>
+      <section>
+        <a href="https://bit.ly/home-number" draggable="false"
+          ><img src="assets/media/img/svg/WhatsApp.svg" alt="WhatsApp"
+        /></a>
+        <a href="mailto:student.behn@gmail.com" draggable="false"
+          ><img src="assets/media/img/svg/Email.svg" alt="E-mail"
+        /></a>
+      </section>
+    </footer>
+    <section class="rights-section">
+      <div class="rights">
+        <p>All rights reserved: Franco Behn</p>
+      </div>
+    </section>
+    <!-- Scripts de JavaScript -->
+    <script src="assets/js/Fixed-First-Script-Two.js"></script>
+    <script src="assets/js/Loader.js"></script>
+    <script src="assets/js/others/presentations/Presentations.js"></script>
+  </body>
+</html>

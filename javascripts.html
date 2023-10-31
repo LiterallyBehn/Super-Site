@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Super Site!</title>
+    <!-- Estilos -->
+    <link href="assets/css/First-Style-Specificity.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/Loader.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/others/javascripts/First-Style.css"
+    />
+    <link
+      href="assets/media/img/svg/Tiger.svg"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="loader">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <!-- Barra de navegación -->
+    <nav>
+      <!-- Isotipo -->
+      <a href="#"><img alt="Isotipo" src="assets/media/img/svg/Tiger.svg" /></a>
+      <!-- Enlaces -->
+      <ul>
+        <li>
+          <a href="#" id="inicio">Inicio</a>
+        </li>
+        <li>
+          <a href="#Who">¿Quiénes somos?</a>
+        </li>
+        <li>
+          <a href="#" id="contacto">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+    <img
+      alt="Descripción de la imagen"
+      id="header-image"
+      src="assets/media/img/jpg/header/Header.jpg"
+    />
+    <main>
+      <div id="JavaScript1" class="magic-box">
+        <div id="middle">
+          <img
+            id="car"
+            src="assets/media/img/webp/BMW i7.webp"
+            alt="Autos en la carretera"
+            draggable="false"
+          />
+        </div>
+        <h2>Calculadora de Velocidad</h2>
+        <form>
+          <label for="distance">Distancia (metros):</label>
+          <input type="number" id="distance" required />
+          <label for="time">Tiempo (minutos):</label>
+          <input type="number" id="time" required />
+          <button type="button" class="blue-button" onclick="calculateSpeed()">
+            Calcular Velocidad
+          </button>
+        </form>
+        <div id="speed-output"></div>
+      </div>
+      <div id="JavaScript2" class="magic-box">
+        <h2>Calculadora de IVA</h2>
+        <form>
+          <label for="amount">Monto (sin IVA):</label>
+          <input type="number" id="amount" required />
+          <label for="percentage">IVA (%):</label>
+          <input type="number" id="percentage" required />
+          <button type="button" class="blue-button" onclick="calculateIVA()">
+            Calcular
+          </button>
+        </form>
+        <div id="iva-output"></div>
+      </div>
+      <div id="JavaScript3" class="magic-box">
+        <h1>Calculadora de Etapa de Vida</h1>
+        <form id="life-stage-calculator">
+          <label for="age">Edad:</label>
+          <input type="number" id="age" step="0.1" required />
+          <button type="submit" class="blue-button">
+            Calcular Etapa de Vida
+          </button>
+        </form>
+        <div id="output">
+          <p id="result"></p>
+          <img id="life-stage-image" src="" alt="" />
+        </div>
+      </div>
+      <img
+        src="assets/media/img/svg/forms/left-arrow.svg"
+        id="leftArrow"
+        onclick="previousJavaScript()"
+        style="display: none"
+      />
+      <img
+        src="assets/media/img/svg/forms/right-arrow.svg"
+        id="rightArrow"
+        onclick="nextJavaScript()"
+      />
+    </main>
+    <footer id="Who" class="footer-grid">
+      <section>
+        <p id="title">¿Quiénes somos?</p>
+        <p class="fidex-width">
+          Somos una comunidad unida por la pasión por la informática y los
+          animales. Nuestro equipo de expertos te ofrece contenido útil y
+          entretenido, siempre buscando mejorar. Aquí, puedes aprender sobre
+          fauna mientras desarrollas habilidades de programación. ¡Te esperamos!
+        </p>
+      </section>
+      <section>
+        <a href="https://bit.ly/home-number" draggable="false"
+          ><img src="assets/media/img/svg/WhatsApp.svg" alt="WhatsApp"
+        /></a>
+        <a href="mailto:student.behn@gmail.com" draggable="false"
+          ><img src="assets/media/img/svg/Email.svg" alt="E-mail"
+        /></a>
+      </section>
+    </footer>
+    <section class="rights-section">
+      <div class="rights">
+        <p>All rights reserved: Franco Behn</p>
+      </div>
+    </section>
+    <!-- Scripts de JavaScript -->
+    <script src="assets/js/Fixed-First-Script-Two.js"></script>
+    <script src="assets/js/Loader.js"></script>
+    <script src="assets/js/others/javascripts/JavaScripts.js"></script>
+    <script src="assets/js/others/javascripts/Calc/Calc.js"></script>
+    <script src="assets/js/others/javascripts/IVA/IVA.js"></script>
+    <script src="assets/js/others/javascripts/Yearsold/Yearsold.js"></script>
+  </body>
+</html>

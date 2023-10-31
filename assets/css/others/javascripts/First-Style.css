@@ -1,0 +1,71 @@
+.magic-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 60%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 1rem;
+}
+
+.blue-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.blue-button:hover {
+  background-color: #0056b3;
+}
+
+#car {
+  width: calc(1260 / 3.5);
+  height: calc(710px / 3.5);
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 720px) {
+  #car {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+
+#middle {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+#leftArrow,
+#rightArrow {
+  position: absolute;
+  width: 30px;
+  cursor: pointer;
+}
+
+#leftArrow {
+  left: 20px;
+}
+
+#rightArrow {
+  right: 20px;
+}
+
+#life-stage-image {
+  height: 9.25em;
+  vertical-align: middle;
+}

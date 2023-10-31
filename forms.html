@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Super Site!</title>
+    <!-- Estilos -->
+    <link href="assets/css/First-Style-Specificity.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/others/forms/First-Forms.css" />
+    <link rel="stylesheet" href="assets/css/others/forms/Second-Form.css" />
+    <link rel="stylesheet" href="assets/css/Loader.css" />
+    <link
+      href="assets/media/img/svg/Tiger.svg"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="loader">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <!-- Barra de navegación -->
+    <nav>
+      <!-- Isotipo -->
+      <a href="index.html"
+        ><img alt="Isotipo" src="assets/media/img/svg/Tiger.svg"
+      /></a>
+      <!-- Enlaces -->
+      <ul>
+        <li>
+          <a href="index.html" id="inicio">Inicio</a>
+        </li>
+        <li>
+          <a href="#Who">¿Quiénes somos?</a>
+        </li>
+        <li>
+          <a href="#" id="contacto">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+    <img
+      alt="Descripción de la imagen"
+      id="header-image"
+      src="assets/media/img/jpg/header/Header.jpg"
+    />
+    <main>
+      <!-- Cat images and texts -->
+      <form action="forms.html" method="post" id="form1">
+        <!-- Practico 1 -->
+        <div>
+          <h1>Formulario de contacto</h1>
+        </div>
+        <div>
+          <input
+            id="nombre"
+            name="nombre"
+            placeholder="Nombre completo"
+            type="text"
+          />
+        </div>
+        <div>
+          <input
+            id="email"
+            name="email"
+            placeholder="Correo electrónico"
+            type="email"
+          />
+        </div>
+        <div>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            placeholder="Mensaje"
+          ></textarea>
+        </div>
+        <input type="submit" value="Enviar" />
+      </form>
+      <form action="enviar.php" method="post" id="form2">
+        <!-- Practico 2 -->
+        <div>
+          <h1>Formulario de registro</h1>
+        </div>
+        <div>
+          <input
+            id="nombre"
+            name="nombre"
+            placeholder="Nombre"
+            required=""
+            type="text"
+          />
+        </div>
+        <div>
+          <input
+            id="apellidos"
+            name="apellidos"
+            placeholder="Apellidos"
+            required=""
+            type="text"
+          />
+        </div>
+        <div>
+          <label for="sexo">Sexo:</label>
+          <input
+            id="hombre"
+            name="sexo"
+            required=""
+            type="radio"
+            value="hombre"
+          />
+          <label for="hombre">Hombre</label>
+          <input id="mujer" name="sexo" type="radio" value="mujer" />
+          <label for="mujer">Mujer</label>
+        </div>
+        <div>
+          <input
+            id="correo"
+            name="correo"
+            placeholder="Correo"
+            required=""
+            type="email"
+          />
+        </div>
+        <div>
+          <input id="recibir" name="recibir" type="checkbox" value="recibir" />
+          <label for="recibir"
+            >Deseo recibir información sobre novedades y ofertas.</label
+          >
+        </div>
+        <div>
+          <input
+            id="acuerdo"
+            name="acuerdo"
+            required=""
+            type="checkbox"
+            value="acuerdo"
+          />
+          <label for="acuerdo">Estoy de acuerdo con recibir información.</label>
+        </div>
+        <div>
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Limpiar" />
+        </div>
+      </form>
+      <form action="enviar.php" method="post" id="form3">
+        <!-- Practico 3 -->
+        <div>
+          <h1>Formulario de registro</h1>
+        </div>
+        <div>
+          <label for="gender">Género:</label>
+          <input id="male" name="gender" type="radio" value="male" />
+          <label for="male">Hombre</label>
+          <input id="female" name="gender" type="radio" value="female" />
+          <label for="female">Mujer</label>
+        </div>
+        <div>
+          <label for="city">Ciudad:</label>
+          <select id="city" name="city">
+            <option value="Montevideo">Montevideo</option>
+            <option value="Salto">Salto</option>
+            <option value="Paysandú">Paysandú</option>
+            <option value="Maldonado">Maldonado</option>
+            <option value="Rivera">Rivera</option>
+            <option value="Tacuarembó">Tacuarembó</option>
+            <option value="Florida">Florida</option>
+            <option value="San José">San José</option>
+            <option value="Durazno">Durazno</option>
+            <option value="Artigas">Artigas</option>
+            <option value="Rocha">Rocha</option>
+            <option value="Colonia">Colonia</option>
+            <option value="Canelones">Canelones</option>
+            <option value="Treinta y Tres">Treinta y Tres</option>
+            <option value="Lavalleja">Lavalleja</option>
+            <option value="Flores">Flores</option>
+            <option value="Soriano">Soriano</option>
+            <option value="Río Negro">Río Negro</option>
+          </select>
+        </div>
+        <div>
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Restablecer" />
+        </div>
+      </form>
+      <form action="enviar.php" method="post" id="form4">
+        <!-- Practico 4 -->
+        <div>
+          <h1>Formulario de contacto</h1>
+        </div>
+        <fieldset>
+          <legend>Datos Personales</legend>
+          <div>
+            <input
+              id="nombre"
+              name="nombre"
+              placeholder="Nombre completo"
+              required=""
+              type="text"
+            />
+          </div>
+          <div>
+            <input
+              class="Tel"
+              name="telefono"
+              placeholder="Teléfono"
+              required=""
+              type="tel"
+            />
+          </div>
+          <div>
+            <input
+              id="correo"
+              name="correo"
+              placeholder="Correo electrónico"
+              required=""
+              type="email"
+            />
+          </div>
+          <div>
+            <label for="pais">País:</label>
+            <select id="pais" name="pais" required="">
+              <option value="">Seleccione un país</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Bolivia">Bolivia</option>
+              <option value="Brasil">Brasil</option>
+              <option value="Chile">Chile</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Costa Rica">Costa Rica</option>
+              <option value="Cuba">Cuba</option>
+              <option value="Ecuador">Ecuador</option>
+              <option value="El Salvador">El Salvador</option>
+              <option value="Guatemala">Guatemala</option>
+              <option value="Haití">Haití</option>
+              <option value="Honduras">Honduras</option>
+              <option value="Jamaica">Jamaica</option>
+              <option value="México">México</option>
+              <option value="Nicaragua">Nicaragua</option>
+              <option value="Panamá">Panamá</option>
+              <option value="Paraguay">Paraguay</option>
+              <option value="Perú">Perú</option>
+              <option value="Puerto Rico">Puerto Rico</option>
+              <option value="República Dominicana">República Dominicana</option>
+              <option value="Uruguay">Uruguay</option>
+              <option value="Venezuela">Venezuela</option>
+            </select>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Intereses</legend>
+          <div>
+            <input
+              id="deporte"
+              name="deporte"
+              type="checkbox"
+              value="deporte"
+            />
+            <label for="deporte">Deportes</label>
+          </div>
+          <div>
+            <input id="musica" name="musica" type="checkbox" value="musica" />
+            <label for="musica">Música</label>
+          </div>
+        </fieldset>
+        <div>
+          <input type="submit" value="Enviar" />
+        </div>
+      </form>
+      <form action="enviar.php" method="post" id="form5">
+        <!-- Practico 5 -->
+        <div>
+          <h1>Formulario de registro</h1>
+        </div>
+        <div>
+          <input
+            id="nombre"
+            name="nombre"
+            placeholder="Nombre"
+            required=""
+            type="text"
+          />
+        </div>
+        <div>
+          <input
+            id="apellidos"
+            name="apellidos"
+            placeholder="Apellidos"
+            required=""
+            type="text"
+          />
+        </div>
+        <div>
+          <label for="sexo">Sexo:</label>
+          <input
+            id="hombre"
+            name="sexo"
+            required=""
+            type="radio"
+            value="hombre"
+          />
+          <label for="hombre">Hombre</label>
+          <input id="mujer" name="sexo" type="radio" value="mujer" />
+          <label for="mujer">Mujer</label>
+        </div>
+        <div>
+          <input
+            id="correo"
+            name="correo"
+            placeholder="Correo"
+            required=""
+            type="email"
+          />
+        </div>
+        <div>
+          <label for="ciudad">Ciudad:</label>
+          <select id="ciudad" name="ciudad" required="">
+            <option value="Montevideo">Seleccione una ciudad</option>
+            <option value="Montevideo">Montevideo</option>
+            <option value="Salto">Salto</option>
+            <option value="Paysandú">Paysandú</option>
+            <option value="Maldonado">Maldonado</option>
+            <option value="Rivera">Rivera</option>
+            <option value="Tacuarembó">Tacuarembó</option>
+            <option value="Florida">Florida</option>
+            <option value="San José">San José</option>
+            <option value="Durazno">Durazno</option>
+            <option value="Artigas">Artigas</option>
+            <option value="Rocha">Rocha</option>
+            <option value="Colonia">Colonia</option>
+            <option value="Canelones">Canelones</option>
+            <option value="Treinta y Tres">Treinta y Tres</option>
+            <option value="Lavalleja">Lavalleja</option>
+            <option value="Flores">Flores</option>
+            <option value="Soriano">Soriano</option>
+            <option value="Río Negro">Río Negro</option>
+          </select>
+        </div>
+        <div>
+          <textarea
+            id="descripcion"
+            name="descripcion"
+            placeholder="Descripción"
+            required=""
+          ></textarea>
+        </div>
+        <div>
+          <input id="recibir" name="recibir" type="checkbox" value="recibir" />
+          <label for="recibir"
+            >Deseo recibir información sobre novedades y ofertas</label
+          >
+        </div>
+        <div>
+          <input
+            id="acuerdo"
+            name="acuerdo"
+            required=""
+            type="checkbox"
+            value="acuerdo"
+          />
+          <label for="acuerdo">Estoy de acuerdo con recibir información</label>
+        </div>
+        <div>
+          <input type="submit" value="Enviar" />
+        </div>
+      </form>
+      <form action="enviar.php" method="post" id="form6">
+        <!-- Practico 6 -->
+        <div>
+          <h1>Varios formularios</h1>
+        </div>
+        <fieldset>
+          <legend>Campo de varios tipos</legend>
+          <div>
+            <label for="nombre">Ingrese Nombre:</label>
+            <input
+              autofocus=""
+              class="Texts"
+              name="nombre"
+              placeholder="Comience con mayúsculas"
+              type="text"
+            />
+          </div>
+          <div>
+            <label for="numero">Ingrese Número:</label>
+            <input id="numero" name="numero" type="number" />
+            <label for="contrasena">Ingrese contraseña:</label>
+            <input
+              id="contrasena"
+              name="contrasena"
+              pattern="(?=.*\\\\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              type="password"
+            />
+            <label for="deslizable">Deslizable a la derecha:</label>
+            <input id="deslizable" name="deslizable" type="range" />
+            <label for="busqueda">Buscar:</label>
+            <input id="busqueda" name="busqueda" type="search" />
+            <label for="telefono">Teléfono:</label>
+            <input id="telefono" name="telefono" type="tel" />
+            <label for="hora">Hora:</label>
+            <input id="hora" name="hora" type="time" />
+            <label for="fecha">Fecha:</label>
+            <input id="fecha" name="fecha" type="date" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Datos personales</legend>
+          <div>
+            <label for="nombre-personal">Ingrese Nombre:</label>
+            <input
+              id="nombre-personal"
+              name="nombre-personal"
+              placeholder="Comience con mayúsculas"
+              type="text"
+            />
+          </div>
+          <div>
+            <label for="apellido">Ingrese Apellido:</label>
+            <input
+              id="apellido"
+              name="apellido"
+              placeholder="Comience con mayúsculas"
+              type="text"
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Contacto</legend>
+          <div>
+            <label for="numero-otro">Ingrese Número:</label>
+            <input id="numero-otro" name="numero-otro" type="number" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Indique el sexo</legend>
+          <div>
+            <label for="masculino">Masculino:</label>
+            <input id="masculino" name="sexo" type="radio" value="masculino" />
+          </div>
+          <div>
+            <label for="femenino">Femenino:</label>
+            <input id="femenino" name="sexo" type="radio" value="femenino" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Selecciona tus intereses</legend>
+          <div>
+            <input
+              id="peliculas"
+              name="peliculas"
+              type="checkbox"
+              value="peliculas"
+            />
+            <label for="peliculas">Películas:</label>
+          </div>
+          <div>
+            <input id="libros" name="libros" type="checkbox" value="libros" />
+            <label for="libros">Libros:</label>
+          </div>
+          <div>
+            <input
+              id="revistas"
+              name="revistas"
+              type="checkbox"
+              value="revistas"
+            />
+            <label for="revistas">Revistas:</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Más herramientas</legend>
+          <div>
+            <input
+              id="campo-placeholder"
+              name="campo-placeholder"
+              placeholder="Comienze con mayúsculas"
+              type="text"
+            />
+            <label for="campo-placeholder">Placeholder</label>
+          </div>
+          <div>
+            <input
+              autofocus=""
+              id="campo-autofocus"
+              name="campo-autofocus"
+              placeholder="Escribe algo aquí"
+              type="text"
+            />
+            <label for="campo-autofocus">Autofocus</label>
+          </div>
+          <div>
+            <input
+              id="campo-pattern"
+              name="campo-pattern"
+              pattern="[0-9]{10}"
+              placeholder="Escribe 10 números"
+              type="text"
+            />
+            <label for="campo-pattern">Pattern</label>
+          </div>
+          <div>
+            <select id="opcion-desplegable" name="opcion-desplegable">
+              <option value="opcion1">Opción 1</option>
+              <option value="opcion2">Opción 2</option>
+              <option value="opcion3">Opción 3</option>
+              <option value="opcion4">Opción 4</option>
+              <option value="opcion5">Opción 5</option>
+            </select>
+            <div>
+              <input
+                id="campo-placeholder"
+                name="campo-placeholder"
+                placeholder="Comienze con mayúsculas"
+                type="text"
+              />
+              <label for="campo-placeholder">Placeholder</label>
+            </div>
+          </div>
+        </fieldset>
+        <div>
+          <input type="submit" value="Enviar" />
+        </div>
+      </form>
+      <form class="form" id="form7">
+        <h1 class="h1">Registro de vehículos</h1>
+        <div>
+          <fieldset>
+            <legend>Datos del titular</legend>
+            <label class="label" for="nombre">Nombre:</label>
+            <input
+              class="input"
+              id="nombre"
+              maxlength="30"
+              name="nombre"
+              pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\\\\\\\\s]+"
+              placeholder="Introduce el nombre..."
+              required=""
+              type="text"
+            />
+            <label class="label" for="apellido">Apellido:</label>
+            <input
+              class="input"
+              id="apellido"
+              maxlength="30"
+              name="apellido"
+              pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\\\\\\\\s]+"
+              placeholder="Introduce el apellido..."
+              required=""
+              type="text"
+            />
+            <label class="label" for="telefono">Teléfono:</label>
+            <input
+              class="input"
+              id="telefono"
+              maxlength="9"
+              name="telefono"
+              pattern="[0-9]+"
+              placeholder="Introduce el teléfono..."
+              required=""
+              type="tel"
+            />
+            <label class="label" for="fecha_empadronamiento"
+              >Fecha de empadronamiento:</label
+            >
+            <input
+              class="input"
+              id="fecha_empadronamiento"
+              name="fecha_empadronamiento"
+              required=""
+              type="date"
+            />
+          </fieldset>
+        </div>
+        <div>
+          <fieldset>
+            <legend>Datos del vehículo</legend>
+            <label class="label" for="marca">Marca:</label>
+            <select class="select" id="marca" name="marca">
+              <option value="">Selecciona una marca</option>
+              <option value="Audi">Audi</option>
+              <option value="BMW">BMW</option>
+              <option value="Ferrari">Ferrari</option>
+              <option value="Ford">Ford</option>
+              <option value="Jaguar">Jaguar</option>
+              <option value="Lamborghini">Lamborghini</option>
+              <option value="Mercedes-Benz">Mercedes-Benz</option>
+              <option value="Porsche">Porsche</option>
+              <option value="Rolls-Royce">Rolls-Royce</option>
+              <option value="Tesla">Tesla</option>
+            </select>
+            <label class="label" for="modelo">Modelo:</label>
+            <input
+              class="input"
+              id="modelo"
+              name="modelo"
+              placeholder="Introduce el modelo..."
+              required=""
+              type="text"
+            />
+            <label class="label" for="año">Año:</label>
+            <select class="select" id="año" name="año">
+              <option value="">Seleccione el año</option>
+              <option value="2000">2000</option>
+              <option value="2001">2001</option>
+              <option value="2002">2002</option>
+              <option value="2003">2003</option>
+              <option value="2004">2004</option>
+              <option value="2005">2005</option>
+              <option value="2006">2006</option>
+              <option value="2007">2007</option>
+              <option value="2008">2008</option>
+              <option value="2009">2009</option>
+              <option value="2010">2010</option>
+              <option value="2011">2011</option>
+              <option value="2012">2012</option>
+              <option value="2013">2013</option>
+              <option value="2014">2014</option>
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="202 &lt;option value=">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+            </select>
+            <label class="label" for="color">Color:</label>
+            <select class="select" id="color" name="color">
+              <option value="">Selecciona un color</option>
+              <option value="Blanco">Blanco</option>
+              <option value="Negro">Negro</option>
+              <option value="Gris">Gris</option>
+              <option value="Rojo">Rojo</option>
+              <option value="Azul">Azul</option>
+              <option value="Verde">Verde</option>
+              <option value="Amarillo">Amarillo</option>
+              <option value="Naranja">Naranja</option>
+              <option value="Morado">Morado</option>
+              <option value="Rosa">Rosa</option>
+            </select>
+            <label class="label" for="matricula">Matrícula:</label>
+            <input
+              class="input"
+              id="matricula"
+              name="matricula"
+              pattern="[A-Z]{3}[0-9]{4}"
+              placeholder="Introduce la matrícula..."
+              required=""
+              type="text"
+            />
+            <label class="label" for="ciudad">Ciudad:</label>
+            <select class="select" id="ciudad" name="ciudad">
+              <option value="">Selecciona una ciudad</option>
+              <option value="Artigas">Artigas</option>
+              <option value="Canelones">Canelones</option>
+              <option value="Cerro Largo">Cerro Largo</option>
+              <option value="Colonia">Colonia</option>
+              <option value="Durazno">Durazno</option>
+              <option value="Flores">Flores</option>
+              <option value="Florida">Florida</option>
+              <option value="Lavalleja">Lavalleja</option>
+              <option value="Maldonado">Maldonado</option>
+              <option value="Montevideo">Montevideo</option>
+              <option value="Paysandú">Paysandú</option>
+              <option value="Río Negro">Río Negro</option>
+              <option value="Rivera">Rivera</option>
+              <option value="Rocha">Rocha</option>
+              <option value="Salto">Salto</option>
+              <option value="San José">San José</option>
+              <option value="Soriano">Soriano</option>
+              <option value="Tacuarembó">Tacuarembó</option>
+              <option value="Treinta y Tres">Treinta y Tres</option>
+            </select>
+          </fieldset>
+        </div>
+        <input class="input" type="submit" value="Enviar" />
+      </form>
+      <img
+        src="assets/media/img/svg/forms/left-arrow.svg"
+        id="leftArrow"
+        onclick="previousForm()"
+        style="display: none"
+      />
+      <img
+        src="assets/media/img/svg/forms/right-arrow.svg"
+        id="rightArrow"
+        onclick="nextForm()"
+      />
+    </main>
+    <footer id="Who" class="footer-grid">
+      <section>
+        <p id="title">¿Quiénes somos?</p>
+        <p class="fidex-width">
+          Somos una comunidad unida por la pasión por la informática y los
+          animales. Nuestro equipo de expertos te ofrece contenido útil y
+          entretenido, siempre buscando mejorar. Aquí, puedes aprender sobre
+          fauna mientras desarrollas habilidades de programación. ¡Te esperamos!
+        </p>
+      </section>
+      <section>
+        <a href="https://bit.ly/home-number" draggable="false"
+          ><img src="assets/media/img/svg/WhatsApp.svg" alt="WhatsApp"
+        /></a>
+        <a href="mailto:student.behn@gmail.com" draggable="false"
+          ><img src="assets/media/img/svg/Email.svg" alt="E-mail"
+        /></a>
+      </section>
+    </footer>
+    <section class="rights-section">
+      <div class="rights">
+        <p>All rights reserved: Franco Behn</p>
+      </div>
+    </section>
+    <!-- Scripts de JavaScript -->
+    <script src="assets/js/others/forms/Forms.js"></script>
+    <script src="assets/js/Fixed-First-Script-Two.js"></script>
+    <script src="assets/js/Loader.js"></script>
+  </body>
+</html>
