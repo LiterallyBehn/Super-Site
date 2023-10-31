@@ -9,7 +9,7 @@ document
 
     if (age < -0.9 || age > 120) {
       lifeStage = "Edad no válida";
-      lifeStageImage = "invalid_age.jpg";
+      lifeStageImage = "invalid_age.png";
     } else if (age >= -0.9 && age < 1) {
       lifeStage = "Feto";
       lifeStageImage = "fetus.png";
